@@ -1,0 +1,347 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.number{
+	list-style-type: none;
+	border: none;
+	background: transparent;
+}
+.number li{
+	display: inline-block;
+	cursor: pointer;
+	padding: 15px 2px;
+	margin-top: 5px;
+	font-size: 14px;
+
+}
+.currencies a{
+	text-decoration: underline;
+	color: #000;
+	padding: 1px 2px;
+	border: 1px solid #fff;
+}
+.currencies ul li a:hover{
+	color: red;
+}
+
+.menu-bar{
+	width: auto;
+	height: auto;
+	float: right;
+}
+.menu-bar ul{
+	display: inline-flex;
+	float: right;
+}
+.menu-bar ul li{
+	border: 1px transparent grey;
+	list-style-type: none;
+	padding: 15px 35px;
+	text-align: left;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 14px;
+}
+.header img{
+	width: 120px;
+	float: left;
+	margin-top: auto;
+}
+.top-cart{
+	float: right;
+	margin-top: 40px;
+	border: 1px solid lightgrey;
+	border-radius: 2px;
+	background: lightgrey;
+
+}
+.top-cart{
+	display: inline-block;
+	border-radius: 3px;
+	margin-right: 45px;
+}
+.top-cart .fa{
+	font-size: 15px;
+	color: orange;
+}
+.nav-bar{
+	background: #fff;
+	text-align: center;
+}
+.nav-bar ul{
+	display: inline-flex;
+	list-style: none;
+	color: grey;
+	text-decoration: bold-underline;
+	box-sizing: border-box;
+}
+.nav-bar ul li{
+	width: 120px;
+	margin: 10px;
+	padding: 10px;
+}
+.nav-bar ul li a{
+	text-decoration: bold-underline;
+	color: grey;
+}
+.active, .nav-bar ul li:hover{
+	background: #efefef;
+	border-radius: 3px;
+}
+.nav-bar .fa{
+	float: right;
+	margin-top: 35px;
+	cursor: pointer;
+
+}
+.sub-nav-1{
+	display: none;
+}
+.nav-bar ul li:hover .sub-nav-1{
+	display: block;
+	position: absolute;
+	background: #fff;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+.nav-bar ul li:hover .sub-nav-1 ul{
+	display: block;
+	margin: 10px;
+}
+.nav-bar ul li:hover .sub-nav-1 ul li{
+	width: 150px;
+	padding: 10PX;
+	border-bottom: 1px dotted #fff;
+	background: #fff;
+	border-radius: 0;
+	text-align: left;
+}
+.nav-bar ul li:hover .sub-nav-1 ul li:last-child
+{
+	border-bottom: none;
+}
+.sub-nav-1 .fa{
+	margin-top: -37px;
+}
+.sub-nav-2{
+	display: none;
+}
+.nav-bar ul li:hover .sub-nav-2{
+	display: block;
+	position: absolute;
+	background: #fff;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.sub-nav-5{
+	display: none;
+}
+.nav-bar ul li:hover .sub-nav-5{
+	display: block;
+	position: absolute;
+	background: #fff;
+	margin-top: 10px;
+	margin-left: -10px;
+}
+.nav-bar ul li:hover .sub-nav-5 ul{
+	display: block;
+	margin: 8px;
+}
+.nav-bar ul li:hover .sub-nav-5 ul li{
+	width: 120px;
+	padding: 10PX;
+	border-bottom: 1px dotted #fff;
+	background: #fff;
+	border-radius: 0;
+	text-align: left;
+}
+.nav-bar ul li:hover .sub-nav-5 ul li:last-child
+{
+	border-bottom: none;
+}
+.gallery-container{
+	width: 100%;
+	max-width: 1000px;
+	user-select: none;
+	height: 1000px;
+
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.New-arrival{
+	padding: 100px 0;
+	background: #efefef;
+}
+h4{
+	text-align: justify;
+	padding-bottom: 30px;
+}
+.clothes{
+	padding: 5px 5px;
+	background: #efefef;
+	position: relative;
+}
+.clothes img{
+	width: auto;
+	margin: auto;
+	padding: auto;
+}
+.price{
+	text-align: justify;
+	color: orange;
+	font-size: 24px;
+}
+.toogle-button{
+	padding: 5px 5px;
+	background: #efefef;
+	position: relative;
+
+}
+.gallery-1 img{
+	width: auto;
+	margin: auto;
+	padding: auto;
+}
+#sidebar{
+	position: relative;
+	width: 150px;
+	height: auto;
+	background: #000;
+	float: left;
+}
+h3{
+	margin-left: 155px;
+	padding: 12px;
+}
+
+table{
+	margin: 15px;
+	padding: 15px;
+	border: 1px solid #fff;
+	background-color: #fff;
+	width: 350px;
+}
+table img{
+	width: 100px;
+	height: auto;
+	padding: 15px;
+
+}
+.prifoooter{
+	background-color: orange;
+	color: #fff;
+}
+.steps-block .fa{
+	padding-right: 20px;
+	color: red;
+	padding:auto;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	float: left;
+	font-size: 50px;
+}
+
+.Footer{
+	background-color: #000;
+	color: #fff;
+}
+.Footer ul li{
+	color: blue;
+}
